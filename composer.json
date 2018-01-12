@@ -1,7 +1,7 @@
 {
     "name": "ErrorJiang/qcloudapi-sdk-php",
     "keywords": ["tencentyun", "qcloud", "sdk"],
-    "homepage": "git@github.com:ErrorJiang/qcloudapi-sdk-php.git",
+    "homepage": "https://github.com/ErrorJiang/qcloudapi-sdk-php.git",
     "license": "MIT",
     "description": "php sdk for qcloudapi",
     "require": {
