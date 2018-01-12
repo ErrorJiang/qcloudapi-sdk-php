@@ -1,11 +1,23 @@
 {
     "name": "welljiang/qcloudapi-sdk-php",
+    "description": "Unofficial SDK For QCloud API",
+    "type": "library",
+    "keywords": ["qcloud","tencent", "sdk", "api"],
+    "homepage": "https://github.com/ErrorJiang/qcloudapi-sdk-php",
     "authors": [
         {
             "name": "Wen Jiang",
             "email": "wellJiang23@163.com"
         }
     ],
-    "homepage": "https://github.com/ErrorJiang/qcloudapi-sdk-php",
-    "require": {}
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "php": ">=5.4.0",
+        "phpunit/phpunit": "4.4.*"
+    },
+    "autoload": {
+        "psr-4": { "QcloudApi\\": "src/"}
+    }
 }
