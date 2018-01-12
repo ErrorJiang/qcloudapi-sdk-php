@@ -1,9 +1,9 @@
 {
-    "name": "zyb/qcloudapi-sdk-php",
+    "name": "welljiang/qcloudapi-sdk-php",
     "authors": [
         {
-            "name": "wwhgtt wu",
-            "email": "tubage2hao@gmail.com"
+            "name": "Wen Jiang",
+            "email": "wellJiang23@163.com"
         }
     ],
     "require": {}
