@@ -1,5 +1,6 @@
 <?php
-require_once QCLOUDAPI_ROOT_PATH . '/Module/Base.php';
+namespace QcloudApi\Module\Scaling;
+use QcloudApi\Module\Base\QcloudApi_Module_Base;
 /**
  * QcloudApi_Module_Scaling
  * 弹性伸缩模块类

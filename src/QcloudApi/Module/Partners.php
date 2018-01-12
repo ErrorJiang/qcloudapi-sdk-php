@@ -1,5 +1,6 @@
 <?php
-require_once QCLOUDAPI_ROOT_PATH . '/Module/Base.php';
+namespace QcloudApi\Module\Partners;
+use QcloudApi\Module\Base\QcloudApi_Module_Base;
 /**
  * QcloudApi_Module_Partners
  * 渠道合作伙伴

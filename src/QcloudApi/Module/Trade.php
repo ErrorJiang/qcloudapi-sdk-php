@@ -1,5 +1,6 @@
 <?php
-require_once QCLOUDAPI_ROOT_PATH . '/Module/Base.php';
+namespace QcloudApi\Module\Trade;
+use QcloudApi\Module\Base\QcloudApi_Module_Base;
 /**
  * QcloudApi_Module_Trade
  * 产品售卖模块类

@@ -1,5 +1,6 @@
 <?php
-require_once QCLOUDAPI_ROOT_PATH . '/Module/Base.php';
+namespace QcloudApi\Module\Wenzhi;
+use QcloudApi\Module\Base\QcloudApi_Module_Base;
 /**
  * QcloudApi_Module_WENZHI
  * 文智模块类

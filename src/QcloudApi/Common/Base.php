@@ -1,7 +1,6 @@
 <?php
-/**
- * QcloudApi_Common_Base
- */
+namespace QcloudApi\Common\Base;
+use QcloudApi\Common\Error\QcloudApi_Common_Error;
 abstract class QcloudApi_Common_Base
 {
     /**

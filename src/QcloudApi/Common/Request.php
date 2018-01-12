@@ -1,5 +1,6 @@
 <?php
-require_once QCLOUDAPI_ROOT_PATH . '/Common/Sign.php';
+namespace QcloudApi\Commom\Request;
+use QcloudApi\Commom\Sign\QcloudApi_Common_Sign;
 /**
  * QcloudApi_Common_Request
  */

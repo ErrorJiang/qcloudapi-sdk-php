@@ -1,5 +1,6 @@
 <?php
-require_once QCLOUDAPI_ROOT_PATH . '/Module/Base.php';
+namespace QcloudApi\Module\Ccs;
+use QcloudApi\Module\Base\QcloudApi_Module_Base;
 /**
  * QcloudApi_Module_Ccs
  * 容器服务

@@ -1,6 +1,5 @@
 <?php
-// 目录入口
-define('QCLOUDAPI_ROOT_PATH', dirname(__FILE__));
+namespace QcloudApi;
 /**
  * QcloudApi
  * SDK入口文件

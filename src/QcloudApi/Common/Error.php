@@ -1,4 +1,5 @@
 <?php
+namespace QcloudApi\Common\Error;
 /**
  * QcloudApi_Common_Error
  */

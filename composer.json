@@ -8,8 +8,6 @@
         "php": ">=5.3.0"
     },
     "autoload": {
-        "classmap": [
-            "src/QcloudApi/QcloudApi.php"
-        ]
+        "psr-4": { "QcloudApi\\": "src/"}
     }
 }

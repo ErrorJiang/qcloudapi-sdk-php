@@ -1,9 +1,6 @@
 <?php
-if (!defined('QCLOUDAPI_ROOT_PATH')) {
-    // 目录入口
-    define('QCLOUDAPI_ROOT_PATH', dirname(dirname(__FILE__)));
-}
-require_once QCLOUDAPI_ROOT_PATH . '/Common/Base.php';
+namespace QcloudApi\Module\Base;
+use QcloudApi\Common\Base\QcloudApi_Common_Base;
 /**
  * QcloudApi_Module_Base
  * 模块基类

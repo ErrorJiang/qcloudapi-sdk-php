@@ -1,29 +1,36 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);
-require_once './src/QcloudApi/QcloudApi.php';
 
+namespace  app;
+use QcloudApi\QcloudApi;
+class Demo{
 
-$config = array('SecretId'       => '你的secretId',
-                'SecretKey'      => '你的secretKey',
-                'RequestMethod'  => 'GET',
-                'DefaultRegion'  => 'gz');
+    public function __construct()
+    {
+        $config = array('SecretId'       => 'AKIDrcFj5Mkgc7XGrU7cyAKbmpldLwTsab3N',
+            'SecretKey'      => 'PrBe4LcllfR3fwDTgomy5UnzGRcfYO7g',
+            'RequestMethod'  => 'GET',
+            'DefaultRegion'  => 'cd');
 
-$cvm = QcloudApi::load(QcloudApi::MODULE_CVM, $config);
+        $wenzhi = QcloudApi::load(QcloudApi::MODULE_WENZHI, $config);
 
-$package = array('offset' => 0, 'limit' => 3, 'SignatureMethod' =>'HmacSHA256');
+        $package = array("content"=>"李亚鹏挺王菲：加油！孩儿他娘。");
 
-$a = $cvm->DescribeInstances($package);
-// $a = $cvm->generateUrl('DescribeInstances', $package);
+        $a = $wenzhi->TextSentiment($package);
 
-if ($a === false) {
-    $error = $cvm->getError();
-    echo "Error code:" . $error->getCode() . ".\n";
-    echo "message:" . $error->getMessage() . ".\n";
-    echo "ext:" . var_export($error->getExt(), true) . ".\n";
-} else {
-    var_dump($a);
+        $error = $wenzhi->getError();
+        echo "Error code:" . $error->getCode() . ".\n";
+        echo "message:" . $error->getMessage() . ".\n";
+        echo "ext:" . var_export($error->getExt(), true) . ".\n";
+        exit;
+
+        if ($a === false) {
+            $error = $wenzhi->getError();
+            echo "Error code:" . $error->getCode() . ".\n";
+            echo "message:" . $error->getMessage() . ".\n";
+            echo "ext:" . var_export($error->getExt(), true) . ".\n";
+        } else {
+            var_dump($a);}
+    }
+
 }
-
-echo "\nRequest :" . $cvm->getLastRequest();
-echo "\nResponse :" . $cvm->getLastResponse();
-echo "\n";
+$dome = new Demo();
